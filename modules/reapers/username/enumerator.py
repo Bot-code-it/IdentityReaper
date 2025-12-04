@@ -85,6 +85,3 @@ class UsernameReaper:
                     continue
                 results.append(result)
         return results
-if __name__=="__main__":
-    s=UsernameHunter()
-    user=s.HuntUsername
