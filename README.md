@@ -42,6 +42,7 @@ python3 main.py
 | Chess | chess.com |
 | Crazygames | crazygames.com |
 | Spotify | open.spotify.com |
+| X (Twitter) | x.com |
 
 
 ## License
