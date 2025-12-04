@@ -12,7 +12,6 @@ class EmailReaper:
         self.AMAZON=Session()
         self.INSTAGRAM=Session()
         self.CHESS=Session()
-        self.GITHUB=Session()
         self.CRAZYGAMES=Session()
     def Amazon(self,email):
         base_url="https://www.amazon.com/ap/signin"
@@ -141,33 +140,6 @@ class EmailReaper:
                 return {"service": "Crazygames","url":"https://www.crazygames.com","exists": False,"error":False}
         except Exception as e:
             return {"service": "Crazygames","url":"https://www.crazygames.com","exists": False,"error":True,"msg":e}
-    def Github(self, email):
-        url = "https://github.com/signup"
-        headers={"User-Agent":UserAgent(),
-            "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "Accept-Language":"en-US,en;q=0.5",
-            "Accept-Encoding":"gzip, deflate, br",
-            "Connection":"keep-alive"}  
-        try:
-            r = self.GITHUB.get(url, headers=headers, timeout=10)
-            soup = BeautifulSoup(r.text, "html.parser")
-            token = soup.find("input", {"name": "authenticity_token"})
-            if not token:
-                return {"service": "GitHub", "exists": None, "error": True, "msg": "Token missing"}
-            res = self.GITHUB.post(
-                "https://github.com/email_validity_checks",
-                data={"value": email, "authenticity_token": token["value"]},
-                headers=headers, timeout=10)
-            print(res.text)
-            if res.status_code == 422:
-                return {"service": "GitHub", "exists": True, "error": False}
-            if res.status_code == 200:
-                return {"service": "GitHub", "exists": False, "error": False}
-
-            return {"service": "GitHub", "exists": None, "error": True, "msg": "Unhandled response"}
-        except Exception as e:
-            return {"service": "GitHub", "exists": None, "error": True, "msg": str(e)}
-
     def GatherEmail(self,email):
         results=[]
         with ThreadPoolExecutor(max_workers=35) as executor:
@@ -177,5 +149,3 @@ class EmailReaper:
                 if result:
                     results.append(result)
         return results
-if __name__ == "__main__":
-    e=EmailReaper()
