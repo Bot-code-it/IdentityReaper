@@ -29,6 +29,9 @@ python3 main.py
 > Using this tool frequently in a short period of time might get you rate-limited on some sites.  
 > This can lead to the tool returning false existence status.
 
+> [!TIP]
+> Use VPN or proxy to avoid getting rate limited.
+
 ## Sites:
 ### Phonenumber
 | Name | Domain |
