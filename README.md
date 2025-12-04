@@ -46,6 +46,12 @@ python3 main.py
 | Spotify | open.spotify.com |
 | X (Twitter) | x.com |
 
+## Credits
+Some parts of this project are based on ideas and code from other open-source repositories. They helped in building certain modules and features used here.
+**Repositories used:**
+- [Ignorant](https://github.com/megadose/ignorant)
+- [Holehe](https://github.com/megadose/holehe)
+- [Sherlock](https://github.com/sherlock-project/sherlock)
 
 ## License
 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.fr.html)
