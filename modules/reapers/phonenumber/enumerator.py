@@ -95,5 +95,3 @@ class PhonenumberReaper:
         for function in self.sites:
             results.append(function(country_code,phone))
         return results
-if __name__ == "__main__":
-    checker=PhonenumberHunter()
