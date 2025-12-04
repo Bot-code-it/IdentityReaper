@@ -25,7 +25,7 @@ pipx install -r requirements.txt
 python3 main.py
 ```
 
-> [!WARNING]  
+> [!CAUTION]  
 > Using this tool frequently in a short period of time might get you rate-limited on some sites.  
 > This can lead to the tool returning false existence status.
 
