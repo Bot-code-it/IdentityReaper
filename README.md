@@ -2,6 +2,7 @@
 IdentityReaper is a comprehensive OSINT reconnaissance tool designed to identify and analyze a user’s digital footprint across multiple online platforms, using the target's email, phonenumber and username.
 >IdentityReaper does not alert the target
 
+![](https://github.com/Bot-code-it/IdentityReaper/images/front.png)
 ## Installation
 ### Cloning the repo
 ```
