@@ -49,6 +49,9 @@ python3 main.py
 | Spotify | open.spotify.com |
 | X (Twitter) | x.com |
 
+### Username
+Username is checked on 300+ sites.
+
 ## Credits
 Some parts of this project are based on ideas and code from other open-source repositories. They helped in building certain modules and features used here.
 **Repositories used:**
