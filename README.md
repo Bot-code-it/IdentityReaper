@@ -59,5 +59,8 @@ Some parts of this project are based on ideas and code from other open-source re
 - [Holehe](https://github.com/megadose/holehe)
 - [Sherlock](https://github.com/sherlock-project/sherlock)
 
+## Disclamer
+This project is provided for educational and research purposes only. By using this repository, you agree that you are solely responsible for how you apply the code and any outcomes that result from its use. The author does not assume liability for misuse, damages, or actions taken based on this material.
+
 ## License
 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.fr.html)
