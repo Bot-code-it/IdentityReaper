@@ -4,6 +4,32 @@ IdentityReaper is a comprehensive OSINT reconnaissance tool designed to identify
 
 <img src="images/front.png">
 
+## Features
+
+* **Comprehensive OSINT Reconnaissance**  
+  Collects publicly available digital-footprint data using identifiers such as email addresses, phone numbers, and usernames.
+
+* **Wide Platform Coverage**  
+  Performs lookups across numerous online services, social platforms, and databases to compile a detailed identity profile.
+
+* **Username Enumeration Across 300+ Sites**  
+  Checks for username presence on a large network of platforms, enabling thorough footprint mapping.
+
+* **Email and Phone Intelligence Modules**  
+  Provides targeted scanning for email and phone identifiers through multiple online sources.
+
+* **Advanced Identity Analysis**  
+  Additionally, the tool analyzes email domains, retrieves available information related to phone numbers, and performs advanced username analysis capable of inferring possible real names from username patterns.
+
+* **Modular Architecture**  
+  Organized into clear modules for scanning, processing, and reporting, making the project easy to maintain and extend.
+
+* **Lightweight and Easy to Use**
+  Designed to be easy to deploy. Only requires [`requests`](https://pypi.org/project/requests/) and [`beautifulsoup4`](https://pypi.org/project/beautifulsoup4/)
+
+* **Command-Line Interface**  
+  Simple and efficient CLI workflow for quick execution, scripting, and automation.
+
 ## Installation
 ### Cloning the repo
 ```
