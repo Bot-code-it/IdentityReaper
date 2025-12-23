@@ -1,2 +1,5 @@
 requests
 bs4
+Hey actually i deleted my main repository due to some security reasons i would request you to please delete this repository too.
+you can keep the source code if you like to.
+regards 
